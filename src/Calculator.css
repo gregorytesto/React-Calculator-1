@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+}
+
+.display {
+  height: 300px;
+  width: 300px;
+  background-color: lightblue;
+  border: 1px solid blue;
+  max-width: 400px;
+  margin: 10px;
+  width: 80%;
+}
+@font-face {
+  font-family: "Digital-7";
+  src: url(Font/digital-7.ttf);
+}
+.display p {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Digital-7";
+}
+
+.calculator {
+  max-width: 400px;
+  margin: auto;
+}
+
+.buttons {
+  display: block;
+}
+
+.buttons button {
+  width: 80px;
+  height: 50px;
+  margin: 2px;
+}
