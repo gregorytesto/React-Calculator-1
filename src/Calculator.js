@@ -62,11 +62,7 @@ export default class Calculator extends Component {
     }
   };
 
-  //   getLastElement = () => {
-  //     const { memory } = this.state;
-  //     const arr = memory.trim().split(" ");
-  //     return arr.pop();
-  // }
+
 
   handleOperator = (value) => {
     console.log("handle operator");
