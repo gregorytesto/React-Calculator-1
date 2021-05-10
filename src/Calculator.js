@@ -206,7 +206,7 @@ if (this.state.input) {
       <div className="wrapper">
       <div className="calculator">
         <Display
-         input={this.state.input}
+         input={this.state.input || "0"}
          prevInput={this.state.prevInput}
          result={this.state.result}
 

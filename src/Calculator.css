@@ -3,23 +3,21 @@
 }
 
 .display {
- /* display: flex;
+  /* display: flex;
  justify-content: flex-end; */
 
   height: 125px;
-width: 350px;
+  width: 350px;
   background-color: lightblue;
   border: 1px solid blue;
   /* max-width: 400px; */
   margin: 25px;
-
 }
 @font-face {
   font-family: "Digital-7";
   src: url(Font/digital-7.ttf);
 }
 .display p {
- 
   font-size: 50px;
   text-align: right;
   font-family: "Digital-7";
@@ -36,15 +34,17 @@ width: 350px;
     inset 0px 1px 0px rgba(160, 160, 160, 0.3),
     inset 0px 0px 3px rgba(119, 119, 119, 0.5);
   max-width: 400px;
- 
 }
 
 .buttons {
   display: block;
+  margin: 5px;
+  padding: 5px;
 }
 
 .buttons button {
   width: 80px;
   height: 50px;
   margin: 2px;
+  font-size: larger;
 }

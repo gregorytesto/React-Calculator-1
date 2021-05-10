@@ -11,8 +11,8 @@ export default class Display extends Component {
     if (string.length === 0) {
       return;
     } else {
-     //let newString = Intl.NumberFormat().format(parseFloat(string));
-    let newString = parseFloat(string).toLocaleString("en-US")
+     let newString = Intl.NumberFormat().format(parseFloat(string));
+    // let newString = parseFloat(string).toLocaleString("en-US")
       return newString;
     }
   };
@@ -20,7 +20,7 @@ export default class Display extends Component {
     return (
       <div className="display">
         <p>{this.props.result ? "" : this.formatNumber(this.props.input)}</p>
-        <p>{this.props.result ? this.formatNumber(this.props.result) : "result"}</p>
+        <p>{this.props.result ? this.formatNumber(this.props.result) : ""}</p>
         {/* <p>input no f {this.props.input}</p>
         <p>prevInput {this.formatNumber(this.props.prevInput)}</p> */}
         
