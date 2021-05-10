@@ -70,7 +70,7 @@ export default class Buttons extends Component {
           ×
         </button>
 
-        <button value="dot" onClick={this.props.handleClick}>
+        <button value="." onClick={this.props.handleClick}>
           .
         </button>
         <button value="0" onClick={this.props.handleClick}>
