@@ -21,8 +21,9 @@ export default class Calculator extends Component {
    
   }
 
-  handleClick = (e) => {
+  handleClick = (e) => { // I would suggest using a more descriptive function name. It's hard for others to read your code and know what is going on.
     let value = e.target.value;
+    // I like how organized this if statement is
     if (value === "sign") {
       this.changeSign();
     } else if (value === "reset") {
@@ -43,7 +44,7 @@ export default class Calculator extends Component {
   };
 
 
-  dot = () => {
+  dot = () => { // Another example of why descriptive function names are important.
     console.log("dot")
     if(!this.state.dot) {
       this.setState({
@@ -110,7 +111,7 @@ export default class Calculator extends Component {
   
   };
 
-  calculate = () => {
+  calculate = () => { // It's very important to align the blocks of code. Otherwise it makes it hard to read.
     console.log("calculateeeee");
     const { input, prevInput, operator } = this.state
   if (operator === "+") {
@@ -181,7 +182,7 @@ export default class Calculator extends Component {
   changeSign = () => {
     console.log("change sign");
 
-if (this.state.input) {
+if (this.state.input) { // Another example of the need to align the code blocks
   this.setState({
     input: parseFloat(this.state.input) * -1
   })
